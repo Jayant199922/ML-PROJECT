@@ -14,5 +14,5 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image to Amazon ECR...
-      - docker tag my-image:latest ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/my-image:latest
+      - docker tag my-image:latest 21656561931.dkr.ecr.us-west-2.amazonaws.com/my-image:latest
       - docker push 421656561931.dkr.ecr.us-west-2.amazonaws.com/my-image:latest
