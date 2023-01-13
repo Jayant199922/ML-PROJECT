@@ -9,11 +9,11 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t my-image .
-      - docker tag my-image:latest 421656561931.dkr.ecr.ap-northeast-1.amazonaws.com/my-image:latest
+      - docker build -t dockerstore .
+      - docker tag dockerstore:latest 421656561931.dkr.ecr.ap-northeast-1.amazonaws.com/dockerstore:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image to Amazon ECR...
-      - docker push 421656561931.dkr.ecr.ap-northeast-1.amazonaws.com/my-image:latest
+      - docker push 421656561931.dkr.ecr.ap-northeast-1.amazonaws.com/dockerstore:latest
 
