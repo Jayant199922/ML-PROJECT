@@ -8,3 +8,7 @@ Software Requirements:
 3) Docker
 4) Python Interpreter
 5) AWS 
+
+Create Virtual Environment:
+Install virtual env
+Activate virtual environment
